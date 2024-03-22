@@ -3,6 +3,7 @@ package genericUtilityorLibrary;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Set;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
@@ -264,6 +265,26 @@ public String captureScreenShot(WebDriver driver,String screenShotname) throws E
 	Files.copy(src, dest);
 	
 	return dest.getAbsolutePath();
+}
+
+public void handleWindows(WebDriver driver,String expPartialTitle)
+{
+	//Capture all window id's
+	Set<String> allWinIds=driver.getWindowHandles();
+	
+	//navigate through each window id
+	for(String winId:allWinIds)
+	{
+		//switch to all window id and capture the title
+		String actTitle=driver.switchTo().window(winId).getTitle();
+		
+		//capture the window title
+		
+		if(actTitle.contains(expPartialTitle))
+		{
+			break;
+		}
+	}
 }
 
 }
