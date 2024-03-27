@@ -18,6 +18,10 @@ public class HomePage {
 	@FindBy(xpath = "//a[text()='Sign Out']")
 	private WebElement logoutBtd;
 	
+	@FindBy(xpath = "(//a[text()='Organizations'])[1]")
+	private WebElement organization;
+	
+	
 	public HomePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver,this);
@@ -25,6 +29,10 @@ public class HomePage {
 	 public WebElement getClickContact()
 	 {
 		return clickContact;
+	 }
+	 public WebElement getOrganization() 
+	 {
+			return organization;
 	 }
 	 public WebElement getImglogOut()
 	 {
@@ -42,6 +50,13 @@ public class HomePage {
 	 public void clickContactOperation()
 	 {
 		 getClickContact().click();
+	 }
+	 /**
+	  * This is generic method for clicking of organization
+	  */
+	 public void clickonOrganization()
+	 {
+		 getOrganization().click();
 	 }
 	 /**
 	  * This is a generic method for logout operation

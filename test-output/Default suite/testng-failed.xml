@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.Assert_Class">
+      <class name="organizationpackage.CreateOrganizationTest">
         <methods>
-          <include name="name"/>
+          <include name="acConfig"/>
+          <include name="bmConfig"/>
+          <include name="bcConfig"/>
+          <include name="amConfig"/>
+          <include name="bsConfig"/>
+          <include name="createOrganizationPage"/>
+          <include name="asConfig"/>
         </methods>
-      </class> <!-- practice.Assert_Class -->
+      </class> <!-- organizationpackage.CreateOrganizationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
