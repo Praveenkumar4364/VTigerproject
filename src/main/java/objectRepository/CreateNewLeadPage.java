@@ -21,6 +21,18 @@ public class CreateNewLeadPage extends SeleniumUtility {
 	@FindBy(xpath = "//input[@name='company']")
 	private WebElement company;
 
+	@FindBy(xpath = "//input[@name='designation']")
+	private WebElement leadtitle;
+	
+	@FindBy(xpath = "//select[@name='leadsource']")
+	private WebElement leadsource;
+	
+	@FindBy(xpath = "//select[@name='industry']")
+	private WebElement industry;
+	
+	@FindBy(xpath = "//input[@name='annualrevenue']")
+	private WebElement annualrevenue;
+	
 	@FindBy(xpath = "(//input[@title='Save [Alt+S]'])[1]")
 	private WebElement saveBtn;
 
@@ -45,6 +57,22 @@ public class CreateNewLeadPage extends SeleniumUtility {
 		return company;
 	}
 
+	public WebElement getLeadtitle() {
+		return leadtitle;
+	}
+
+	public WebElement getLeadsource() {
+		return leadsource;
+	}
+
+	public WebElement getIndustry() {
+		return industry;
+	}
+
+	public WebElement getAnnualrevenue() {
+		return annualrevenue;
+	}
+	
 	public WebElement getSaveBtn() {
 		return saveBtn;
 	}
@@ -67,6 +95,29 @@ public class CreateNewLeadPage extends SeleniumUtility {
     	firstname.sendKeys(Firstname);
     	lastname.sendKeys(Lastname);
     	company.sendKeys(CompanyName);
+    	saveBtn.click();
+    }
+    /**
+     * This is generic method for Lastname,Firstname,Saluation,Title,Leadsource,Industry,AnnualRevenue
+     * @param Lastname
+     * @param CompanyName
+     * @param Firstname
+     * @param Saluation
+     * @param Title
+     * @param Leadsource
+     * @param Industry
+     * @param Annualrevenue
+     */
+    public void createnewleadOperation(String Lastname,String CompanyName,String Firstname,String Saluation,String Title,String Leadsource,String Industry,String Annualrevenue)
+    {
+    	handleDropdown(Saluation,saluation);
+    	firstname.sendKeys(Firstname);
+    	lastname.sendKeys(Lastname);
+    	company.sendKeys(CompanyName);
+    	leadtitle.sendKeys(Title);
+    	handleDropdown(Leadsource, leadsource);
+    	handleDropdown(Industry, industry);
+    	annualrevenue.sendKeys(Annualrevenue);
     	saveBtn.click();
     }
 }
