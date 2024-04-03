@@ -22,6 +22,9 @@ public class HomePage {
 	private WebElement organization;
 	
 	
+	@FindBy(xpath = "(//a[text()='Leads'])[1]")
+	private WebElement lead;
+	
 	public HomePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver,this);
@@ -34,6 +37,9 @@ public class HomePage {
 	 {
 			return organization;
 	 }
+	 public WebElement getLead() {
+			return lead;
+		}
 	 public WebElement getImglogOut()
 	 {
 		return imglogOut;
@@ -57,6 +63,13 @@ public class HomePage {
 	 public void clickonOrganization()
 	 {
 		 getOrganization().click();
+	 }
+	 /**
+	  * This is generic method for click on leads
+	  */
+	 public void clickLeads()
+	 {
+		 getLead().click();
 	 }
 	 /**
 	  * This is a generic method for logout operation

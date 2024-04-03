@@ -15,6 +15,9 @@ public class CreateNewOrganizationPage extends SeleniumUtility {
 	@FindBy(xpath = "(//input[@title='Save [Alt+S]'])[1]")
 	private WebElement savebt;
 	
+	@FindBy(xpath = "//select[@name='industry']")
+	private WebElement industry;
+	
 	public CreateNewOrganizationPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver,this);
@@ -34,6 +37,17 @@ public class CreateNewOrganizationPage extends SeleniumUtility {
 	public void operationOnNewOrganizationPage(String organizationName)
 	{
 		getOrganizationName().sendKeys(organizationName);
+		getSaveBt().click();
+	}
+	/**
+	 * This is generic method for createneworganization with name and industry
+	 * @param organizationName
+	 * @param Industry
+	 */
+	public void operationOnNewOrganizationPage(String organizationName,String Industry)
+	{
+		getOrganizationName().sendKeys(organizationName);
+		handleDropdown(industry, Industry);
 		getSaveBt().click();
 	}
 }
