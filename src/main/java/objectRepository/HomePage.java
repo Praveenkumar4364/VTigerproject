@@ -25,6 +25,12 @@ public class HomePage {
 	@FindBy(xpath = "(//a[text()='Leads'])[1]")
 	private WebElement lead;
 	
+	@FindBy (xpath = "//a[text()='Products']")
+	private WebElement product;
+	
+	@FindBy (xpath = "(//a[text()='Documents'])[1]")
+	private WebElement documents;
+	
 	public HomePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver,this);
@@ -50,6 +56,12 @@ public class HomePage {
 		return logoutBtd;
 		 
 	 }
+	 public WebElement getProduct() {
+			return product;
+		}
+		public WebElement getDocuments() {
+			return documents;
+		}
 	 /**
 	  * This is generic method for home page
 	  */
@@ -70,6 +82,20 @@ public class HomePage {
 	 public void clickLeads()
 	 {
 		 getLead().click();
+	 }
+	 /**
+	  * This is generic method for click on product
+	  */
+	 public void clickonProduct()
+	 {
+	 	product.click();
+	 }
+	 /**
+	  * This is generic method for click on Document
+	  */
+	 public void clickonDocuments()
+	 {
+	 	documents.click();
 	 }
 	 /**
 	  * This is a generic method for logout operation

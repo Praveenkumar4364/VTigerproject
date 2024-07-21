@@ -2,40 +2,46 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-03T22:24:51 IST" name="Default suite" finished-at="2024-04-03T22:25:20 IST" duration-ms="28115">
+  <suite started-at="2024-07-20T19:30:27 IST" name="Default suite" finished-at="2024-07-20T19:30:47 IST" duration-ms="19714">
     <groups>
+      <group name="RegressionSuite">
+        <method signature="Create_Document_Test.createDocument()[pri:0, instance:document_package.Create_Document_Test@54d9d12d]" name="createDocument" class="document_package.Create_Document_Test"/>
+      </group> <!-- RegressionSuite -->
+      <group name="SmokeSuite">
+        <method signature="Create_Document_Test.createDocument()[pri:0, instance:document_package.Create_Document_Test@54d9d12d]" name="createDocument" class="document_package.Create_Document_Test"/>
+      </group> <!-- SmokeSuite -->
     </groups>
-    <test started-at="2024-04-03T22:24:51 IST" name="Default test" finished-at="2024-04-03T22:25:20 IST" duration-ms="28115">
-      <class name="leadspackage.CreateNewLeadWithNonMandatoryFieldsTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:leadspackage.CreateNewLeadWithNonMandatoryFieldsTest@7c7a06ec]" started-at="2024-04-03T22:24:51 IST" name="bsConfig" finished-at="2024-04-03T22:24:51 IST" duration-ms="10" status="PASS">
+    <test started-at="2024-07-20T19:30:27 IST" name="Default test" finished-at="2024-07-20T19:30:47 IST" duration-ms="19714">
+      <class name="document_package.Create_Document_Test">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:document_package.Create_Document_Test@54d9d12d]" started-at="2024-07-20T19:30:27 IST" name="bsConfig" finished-at="2024-07-20T19:30:27 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:leadspackage.CreateNewLeadWithNonMandatoryFieldsTest@7c7a06ec]" started-at="2024-04-03T22:24:51 IST" name="bcConfig" finished-at="2024-04-03T22:24:57 IST" duration-ms="5521" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:document_package.Create_Document_Test@54d9d12d]" started-at="2024-07-20T19:30:27 IST" name="bcConfig" finished-at="2024-07-20T19:30:30 IST" duration-ms="3323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:leadspackage.CreateNewLeadWithNonMandatoryFieldsTest@7c7a06ec]" started-at="2024-04-03T22:24:57 IST" name="bmConfig" finished-at="2024-04-03T22:25:02 IST" duration-ms="5392" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:document_package.Create_Document_Test@54d9d12d]" started-at="2024-07-20T19:30:30 IST" name="bmConfig" finished-at="2024-07-20T19:30:33 IST" duration-ms="3266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="createNewLeadWithNon_MandatoryFields()[pri:0, instance:leadspackage.CreateNewLeadWithNonMandatoryFieldsTest@7c7a06ec]" started-at="2024-04-03T22:25:02 IST" name="createNewLeadWithNon_MandatoryFields" finished-at="2024-04-03T22:25:17 IST" duration-ms="14484" status="PASS">
+        <test-method signature="createDocument()[pri:0, instance:document_package.Create_Document_Test@54d9d12d]" started-at="2024-07-20T19:30:33 IST" name="createDocument" finished-at="2024-07-20T19:30:44 IST" duration-ms="11036" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewLeadWithNon_MandatoryFields -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:leadspackage.CreateNewLeadWithNonMandatoryFieldsTest@7c7a06ec]" started-at="2024-04-03T22:25:17 IST" name="amConfig" finished-at="2024-04-03T22:25:19 IST" duration-ms="2395" status="PASS">
+        </test-method> <!-- createDocument -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:document_package.Create_Document_Test@54d9d12d]" started-at="2024-07-20T19:30:44 IST" name="amConfig" finished-at="2024-07-20T19:30:46 IST" duration-ms="1804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:leadspackage.CreateNewLeadWithNonMandatoryFieldsTest@7c7a06ec]" started-at="2024-04-03T22:25:19 IST" name="acConfig" finished-at="2024-04-03T22:25:20 IST" duration-ms="279" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:document_package.Create_Document_Test@54d9d12d]" started-at="2024-07-20T19:30:46 IST" name="acConfig" finished-at="2024-07-20T19:30:47 IST" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:leadspackage.CreateNewLeadWithNonMandatoryFieldsTest@7c7a06ec]" started-at="2024-04-03T22:25:20 IST" name="asConfig" finished-at="2024-04-03T22:25:20 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:document_package.Create_Document_Test@54d9d12d]" started-at="2024-07-20T19:30:47 IST" name="asConfig" finished-at="2024-07-20T19:30:47 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- leadspackage.CreateNewLeadWithNonMandatoryFieldsTest -->
+      </class> <!-- document_package.Create_Document_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
